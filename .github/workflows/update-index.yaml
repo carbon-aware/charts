@@ -1,0 +1,42 @@
+name: Update Helm index
+
+on:
+    workflow_dispatch:
+    repository_dispatch:
+        types: [chart-released]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout gh-pages branch
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+
+      - name: Set up Helm
+        uses: azure/setup-helm@v3
+
+      - name: Download chart packages from releases
+        run: |
+          mkdir -p scheduler
+
+          # Download the latest release asset from each repo
+          gh release download --repo carbon-aware/scheduler --pattern '*.tgz' --dir scheduler
+
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Rebuild index.yaml
+        run: |
+          helm repo index . --url https://charts.carbonaware.dev
+
+      - name: Commit and push
+        run: |
+          git config user.name "carbon-aware-bot"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "Update index.yaml [skip ci]" || echo "No changes"
+          git push origin gh-pages

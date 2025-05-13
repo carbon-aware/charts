@@ -3,7 +3,17 @@ entries:
   scheduler:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-05-12T23:08:08.463935315Z"
+    created: "2025-05-13T15:39:28.488171886Z"
+    description: A Helm chart for Carbon Aware Scheduler
+    digest: 3f674a201f87f79a67fe334d66066d8f603450f3231fa07163e1f97440a86049
+    name: scheduler
+    type: application
+    urls:
+    - https://carbon-aware.github.io/charts/scheduler/scheduler-0.1.9.tgz
+    version: 0.1.9
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2025-05-13T15:39:28.487720778Z"
     description: A Helm chart for Carbon Aware Scheduler
     digest: 9ed3f4d21eccbd519768853fae3d472b258488fccdb9b8638703bdeb31a4124f
     name: scheduler
@@ -13,7 +23,7 @@ entries:
     version: 0.1.8
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-05-12T23:08:08.463496064Z"
+    created: "2025-05-13T15:39:28.487252127Z"
     description: A Helm chart for Carbon Aware Scheduler
     digest: 59c239a8cc962a474caddc8273926ab46e6289000363bde4df8742c02615aeab
     name: scheduler
@@ -23,7 +33,7 @@ entries:
     version: 0.1.7
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-05-12T23:08:08.463058325Z"
+    created: "2025-05-13T15:39:28.486797884Z"
     description: A Helm chart for Carbon Aware Scheduler
     digest: 03b198b6828ead817efd681a07713a2ff51c2a020705d1588f9e9ae8ec164c0c
     name: scheduler
@@ -33,7 +43,7 @@ entries:
     version: 0.1.6
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-05-12T23:08:08.462615056Z"
+    created: "2025-05-13T15:39:28.486331497Z"
     description: A Helm chart for Carbon Aware Scheduler
     digest: 4693bd253cbf0a13f7d1ff95ebf1dbab43312e51363d0c5cb92a79c15ca945b0
     name: scheduler
@@ -43,7 +53,7 @@ entries:
     version: 0.1.5
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-05-12T23:08:08.462179943Z"
+    created: "2025-05-13T15:39:28.485893154Z"
     description: A Helm chart for Carbon Aware Scheduler
     digest: 47548a79ce774158c8a65cdf0898711d9981fe7dcc6ca844019f8e38c4339355
     name: scheduler
@@ -51,4 +61,4 @@ entries:
     urls:
     - https://carbon-aware.github.io/charts/scheduler/scheduler-0.1.3.tgz
     version: 0.1.3
-generated: "2025-05-12T23:08:08.461572497Z"
+generated: "2025-05-13T15:39:28.485271015Z"
